@@ -1,0 +1,7 @@
+@use '../abstracts/colors';
+@use '../abstracts/mixins';
+
+.related-products {
+    @include mixins.center-vertical;
+    margin: 0px 120px;
+}

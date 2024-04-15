@@ -1,0 +1,21 @@
+@use '../abstracts/colors';
+@use '../abstracts/mixins';
+
+.section-title {
+    @include mixins.center-horizontal;
+    gap: 34px;
+    justify-content: center;
+
+    .section-title__bar {
+        width: 360px;
+        height: 1px;
+
+        background-color: colors.$gray-75;
+    }
+
+    .section-title__title {
+        font-size: 30px;
+        font-weight: bold;
+        color: colors.$primary;
+    }
+}
