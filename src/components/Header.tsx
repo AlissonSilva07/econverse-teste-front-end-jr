@@ -1,15 +1,15 @@
-import '../../sass/components/_header.scss'
+import '../sass/components/_header.scss'
 
-import ShieldIcon from '../../assets/Header/ShieldCheck.png'
-import TruckIcon from '../../assets/Header/Truck.png'
-import CardIcon from '../../assets/Header/CreditCard.png'
-import Logo from '../../assets/Header/Group 35.png'
-import SearchIcon from '../../assets/Header/MagnifyingGlass.png'
-import BoxIcon from '../../assets/Header/Group.png'
-import HeartIcon from '../../assets/Header/Heart.png'
-import ProfileIcon from '../../assets/Header/UserCircle.png'
-import CartIcon from '../../assets/Header/ShoppingCart.png'
-import CrownIcon from '../../assets/Header/CrownSimple.png'
+import ShieldIcon from '../assets/Header/ShieldCheck.png'
+import TruckIcon from '../assets/Header/Truck.png'
+import CardIcon from '../assets/Header/CreditCard.png'
+import Logo from '../assets/Header/Group 35.png'
+import SearchIcon from '../assets/Header/MagnifyingGlass.png'
+import BoxIcon from '../assets/Header/Group.png'
+import HeartIcon from '../assets/Header/Heart.png'
+import ProfileIcon from '../assets/Header/UserCircle.png'
+import CartIcon from '../assets/Header/ShoppingCart.png'
+import CrownIcon from '../assets/Header/CrownSimple.png'
 
 const Header = () => {
   return (

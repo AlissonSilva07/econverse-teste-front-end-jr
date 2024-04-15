@@ -10,3 +10,12 @@
     display: flex;
     align-items: center;
 }
+
+@mixin background($imgpath, $position:0 0, $repeat: no-repeat, $size: cover) {
+    background: {
+        image: url($imgpath);
+        position: $position;
+        repeat: $repeat;
+        size: $size;
+    }
+}

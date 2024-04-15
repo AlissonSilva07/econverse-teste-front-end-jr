@@ -31,15 +31,16 @@ header {
     }
 
     .header-middle {
-        @include mixins.center-horizontal;
         width: 100%;
         height: 72px;
+        padding: 0px 64px;
+        @include mixins.center-horizontal;
         gap: 32px;
         justify-content: space-around;
         border-bottom: 1px solid colors.$gray-100;
 
         .header-middle__input-group {
-            width: 100%;
+            flex: 1;
             position: relative;
             @include mixins.center-horizontal;
 
