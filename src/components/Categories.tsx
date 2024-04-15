@@ -12,13 +12,13 @@ import ModaIcon from '../assets/Categories/moda 1.png'
 const Categories = () => {
   return (
     <section className='categories'>
-        <SingleCategory img={<img src={TecnologiaIcon} alt='Tecnologia' />} text='Tecnologia' />
-        <SingleCategory img={<img src={SupermercadoIcon} alt='Supermercado' />} text='Supermercado' />
-        <SingleCategory img={<img src={BebidasIcon} alt='Bebidas' />} text='Bebidas' />
-        <SingleCategory img={<img src={FerramentasIcon} alt='Ferramentas' />} text='Ferramentas' />
-        <SingleCategory img={<img src={SaudeIcon} alt='Saúde' />} text='Saúde' />
-        <SingleCategory img={<img src={EsportesIcon} alt='Esportes e Fitness' />} text='Esportes e Fitness' />
-        <SingleCategory img={<img src={ModaIcon} alt='Moda' />} text='Moda' />
+        <SingleCategory img={<img src={TecnologiaIcon} alt='Tecnologia' />} text='Tecnologia' checked={true} />
+        <SingleCategory img={<img src={SupermercadoIcon} alt='Supermercado' />} text='Supermercado' checked={false} />
+        <SingleCategory img={<img src={BebidasIcon} alt='Bebidas' />} text='Bebidas' checked={false} />
+        <SingleCategory img={<img src={FerramentasIcon} alt='Ferramentas' />} text='Ferramentas' checked={false} />
+        <SingleCategory img={<img src={SaudeIcon} alt='Saúde' />} text='Saúde' checked={false} />
+        <SingleCategory img={<img src={EsportesIcon} alt='Esportes e Fitness' />} text='Esportes e Fitness' checked={false} />
+        <SingleCategory img={<img src={ModaIcon} alt='Moda' />} text='Moda' checked={false} />
     </section>
   )
 }
