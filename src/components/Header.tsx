@@ -52,7 +52,7 @@ const Header = () => {
             <button className="header-bottom__nav-button">LIVROS</button>
             <button className="header-bottom__nav-button">MODA</button>
             <button className="header-bottom__nav-button">LANÇAMENTOS</button>
-            <button className="header-bottom__nav-button">OFERTAS DO DIA</button>
+            <button className="header-bottom__nav-button__checked">OFERTAS DO DIA</button>
             <button className="header-bottom__nav-button">
                 <img src={CrownIcon} alt="Assinatura" />
                 ASSINATURA
