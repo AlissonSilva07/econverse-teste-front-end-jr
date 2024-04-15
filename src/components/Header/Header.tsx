@@ -1,4 +1,4 @@
-import './Header.scss'
+import '../../sass/components/_header.scss'
 
 import ShieldIcon from '../../assets/Header/ShieldCheck.png'
 import TruckIcon from '../../assets/Header/Truck.png'
@@ -14,6 +14,7 @@ import CrownIcon from '../../assets/Header/CrownSimple.png'
 const Header = () => {
   return (
     <header>
+
         <div className="header-top">
             <div className='header-top__item'>
                 <img src={ShieldIcon} alt="Shield Check" />
@@ -28,11 +29,14 @@ const Header = () => {
                 <p><span>Parcele</span> suas compras.</p>
             </div>
         </div>
+
         <div className="header-middle">
-            <img src={Logo} alt="Logo da VTex" />
-            <div>
-                <input type="text" placeholder='O que você está buscando?' />
-                <img src={SearchIcon} alt="Pesquisar" />
+            <img src={Logo} alt="Logo da VTex" className='header-middle__logo' />
+            <div className='header-middle__input-group'>
+                <input type="text" placeholder='O que você está buscando?' className='header-middle__input-group__input' />
+                <button className='header-middle__input-group__search-button'>
+                    <img src={SearchIcon} alt="Pesquisar" />
+                </button>
             </div>
             <div className="header-middle__buttons">
                 <img src={BoxIcon} alt="Inbox" />
@@ -41,14 +45,15 @@ const Header = () => {
                 <img src={CartIcon} alt="Carrinho" />
             </div>
         </div>
+
         <div className="header-bottom">
-            <button className="header-bottom__nav_button">TODAS AS CATEGORIAS</button>
-            <button className="header-bottom__nav_button">SUPERMERCADO</button>
-            <button className="header-bottom__nav_button">LIVROS</button>
-            <button className="header-bottom__nav_button">MODA</button>
-            <button className="header-bottom__nav_button">LANÇAMENTOS</button>
-            <button className="header-bottom__nav_button">OFERTAS DO DIA</button>
-            <button className="header-bottom__nav_button">
+            <button className="header-bottom__nav-button">TODAS AS CATEGORIAS</button>
+            <button className="header-bottom__nav-button">SUPERMERCADO</button>
+            <button className="header-bottom__nav-button">LIVROS</button>
+            <button className="header-bottom__nav-button">MODA</button>
+            <button className="header-bottom__nav-button">LANÇAMENTOS</button>
+            <button className="header-bottom__nav-button">OFERTAS DO DIA</button>
+            <button className="header-bottom__nav-button">
                 <img src={CrownIcon} alt="Assinatura" />
                 ASSINATURA
             </button>

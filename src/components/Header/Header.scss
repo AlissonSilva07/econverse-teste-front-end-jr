@@ -1,6 +1,0 @@
-@use '../../styles/variables';
-@use '../../styles/mixins';
-
-header {
-    @include mixins.center-vertical;
-}
