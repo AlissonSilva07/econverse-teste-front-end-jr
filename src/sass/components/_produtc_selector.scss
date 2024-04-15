@@ -1,0 +1,7 @@
+@use '../abstracts/colors';
+@use '../abstracts/mixins';
+
+.product-selector {
+    width: 100%;
+    @include mixins.center-horizontal;
+}

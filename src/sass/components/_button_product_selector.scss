@@ -1,0 +1,30 @@
+@use '../abstracts/colors';
+@use '../abstracts/mixins';
+
+.button-product-selector {
+    width: 100%;
+    height: 40px;
+    padding: 12px 58px;
+    @include mixins.center-vertical;
+    justify-content: center;
+    gap: 10px;
+    background-color: colors.$bg;
+    border: 1px solid colors.$gray-200;
+    font-size: 16px;
+    font-weight: 400;
+    color: colors.$gray-850;
+}
+
+.button-product-selector__checked {
+    width: 100%;
+    height: 40px;
+    padding: 12px 58px;
+    @include mixins.center-vertical;
+    justify-content: center;
+    gap: 10px;
+    background-color: colors.$bg;
+    border: 1px solid colors.$gray-200;
+    font-size: 16px;
+    font-weight: bold;
+    color: colors.$primary;
+}
