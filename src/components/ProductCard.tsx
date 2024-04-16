@@ -1,4 +1,4 @@
-import { Product } from '../models/Product'
+import { Product } from '../types/Product'
 import '../sass/components/_product_card.scss'
 import ButttonV1 from './ButttonV1'
 
