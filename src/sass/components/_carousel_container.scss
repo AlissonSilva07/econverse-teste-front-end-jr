@@ -1,0 +1,7 @@
+@use '../abstracts/colors';
+@use '../abstracts/mixins';
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+}

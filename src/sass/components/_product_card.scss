@@ -1,0 +1,54 @@
+@use '../abstracts/colors';
+@use '../abstracts/mixins';
+
+.product-card {
+    width: 270px;
+    height: 500px;
+    background-color: colors.$bg;
+
+    @include mixins.center-vertical;
+
+    border-radius: 10px;
+    filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+
+    .product-card__img {
+        width: 247px;
+        height: 228px;
+    }
+
+    .product-card__details {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .product-card__details-title {
+        font-size: 16px;
+        font-weight: 100;
+        color: colors.$gray-900;
+    }
+
+    .product-card__details-previous-price {
+        font-size: 16px;
+        font-weight: 400;
+        color: colors.$gray-300;
+    }
+
+    .product-card__details-current-price {
+        font-size: 20px;
+        font-weight: bold;
+        color: colors.$gray-900;
+    }
+
+    .product-card__details-installments {
+        font-size: 12px;
+        font-weight: 400;
+        color: colors.$gray-900;
+    }
+
+    .product-card__details-shipping {
+        font-size: 12px;
+        font-weight: 400;
+        color: colors.$primary;
+    }
+}
