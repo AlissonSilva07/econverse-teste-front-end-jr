@@ -1,0 +1,16 @@
+@use '../abstracts/colors';
+@use '../abstracts/mixins';
+
+.button-v2 {
+    width: 245px;
+    height: 44px;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: colors.$primary;
+    
+    font-size: 14px;
+    font-weight: bold;
+    color: colors.$bg;
+}

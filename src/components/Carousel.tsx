@@ -1,10 +1,14 @@
 import '../sass/components/_carousel.scss'
 import ProductCard from './ProductCard'
 
-import { useEffect, useState } from 'react'
+import { LegacyRef, useEffect, useState } from 'react'
 import { Product } from '../types/Product'
 
-const Carousel = () => {
+interface IProps {
+    ref: LegacyRef<HTMLDivElement> | undefined
+}
+
+const Carousel = ({ref}: IProps) => {
 
     const [ products, setProducts ] = useState<Product[]>([])
 
@@ -23,7 +27,7 @@ const Carousel = () => {
     }, [])
 
   return (
-    <div className='carousel'>
+    <div className='carousel' ref={ref}>
         {products && products.length > 0 && products.map(p => (
             <ProductCard key={p.productName} product={p} />
         ))}

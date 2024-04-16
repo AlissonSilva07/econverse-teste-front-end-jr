@@ -1,6 +1,6 @@
 import { Product } from '../types/Product'
 import '../sass/components/_product_card.scss'
-import ButttonV1 from './ButttonV1'
+import ButttonV2 from './ButtonV2'
 
 interface IProps {
     product: Product
@@ -22,7 +22,7 @@ const ProductCard = ({product}: IProps) => {
             <p className='product-card__details-installments'>ou 2x de R$ {product.price / 2} sem juros</p>
             <p className='product-card__details-shipping'>Frete grátis</p>
         </div>
-        <ButttonV1 btnText='COMPRAR' />
+        <ButttonV2 btnText='COMPRAR' />
     </div>
   )
 }

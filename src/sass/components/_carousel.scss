@@ -1,2 +1,8 @@
 @use '../abstracts/colors';
 @use '../abstracts/mixins';
+
+.carousel {
+    @include mixins.center-horizontal;
+    gap: 62px;
+    overflow-x: hidden;
+}
