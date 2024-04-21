@@ -1,7 +1,7 @@
 import '../sass/components/_carousel.scss'
 import ProductCard from './ProductCard'
 
-import { LegacyRef, MutableRefObject, useEffect, useState } from 'react'
+import { MutableRefObject, useEffect, useState } from 'react'
 import { Product } from '../types/Product'
 
 interface IProps {

@@ -4,6 +4,6 @@
 .carousel {
     @include mixins.center-horizontal;
     gap: 62px;
-    overflow-x: scroll;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
