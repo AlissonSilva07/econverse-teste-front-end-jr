@@ -1,8 +1,12 @@
 import '../sass/components/_parceiros.scss'
+import CardAd from './CardAd'
 
 const Parceiros = () => {
   return (
-    <section className="parceiros">Parceiros</section>
+    <section className="parceiros">
+      <CardAd title='Parceiros' subtitle='Lorem ipsum dolor sit amet, consectetur' btnText='CONFIRA' />
+      <CardAd title='Parceiros' subtitle='Lorem ipsum dolor sit amet, consectetur' btnText='CONFIRA' />
+    </section>
   )
 }
 

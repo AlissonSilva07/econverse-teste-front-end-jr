@@ -2,7 +2,7 @@
 @use '../abstracts/mixins';
 
 .carousel {
-    padding: 0px 4px;
+    padding: 16px;
     @include mixins.center-horizontal;
     gap: 62px;
     overflow-x: hidden;

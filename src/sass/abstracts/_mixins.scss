@@ -1,5 +1,13 @@
 @use 'colors';
 
+@mixin margin-xl {
+    margin: 0px 80px;
+}
+
+@mixin margin-2xl {
+    margin: 0px 120px;
+}
+
 @mixin center-vertical {
     display: flex;
     flex-direction: column;

@@ -19,3 +19,16 @@
         color: colors.$primary;
     }
 }
+
+.section-sub {
+    width: 100%;
+    @include mixins.center-vertical;
+    justify-content: center;
+    gap: 4px;
+
+    .section-sub__text {
+        font-size: 15px;
+        font-weight: bold;
+        color: colors.$gray-900;
+    }
+}

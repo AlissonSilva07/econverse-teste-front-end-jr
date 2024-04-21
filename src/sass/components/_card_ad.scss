@@ -1,2 +1,27 @@
 @use '../abstracts/colors';
 @use '../abstracts/mixins';
+
+.card-ad {
+    width: 574px;
+    height: 350px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 8px;
+    border: none;
+    border-radius: 10px;
+    @include mixins.background('../../assets/CardAd/image 45.png');
+
+    .card-ad__title {
+        font-size: 40px;
+        font-weight: bold;
+        color: colors.$bg;
+    }
+
+    .card-ad__subtitle {
+        font-size: 16px;
+        font-weight: 400;
+        color: colors.$bg;
+    }
+}

@@ -6,7 +6,7 @@ import SectionTitle from './SectionTitle'
 const Related = () => {
   return (
     <section className='related-products'>
-        <SectionTitle title='Produtos Relacionados' /> 
+        <SectionTitle title='Produtos Relacionados' sub='' /> 
         <ProductSelector />
         <CarouselContainer />
     </section>

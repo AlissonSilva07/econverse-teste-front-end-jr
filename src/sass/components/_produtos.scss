@@ -1,7 +1,7 @@
 @use '../abstracts/colors';
 @use '../abstracts/mixins';
 
-.parceiros {
+.produtos {
     margin: 32px 120px;
     @include mixins.center-horizontal;
     justify-content: space-around;
