@@ -14,8 +14,14 @@
     }
 
     .marcas__group {
+        position: relative;
         width: 100%;
         @include mixins.center-horizontal;
         justify-content: space-between;
+    }
+
+    .marcas__right {
+        position: absolute;
+        right: 0;
     }
 }
