@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <footer className='footer'>
         <div className="footer__sobre">
-            <p className="footer__sobre__title">Sobre nós</p>
+            <p className="footer__sobre__title">SOBRE NÓS</p>
             <div className="footer__sobre__links">
                 <a href="#" className="footer__sobre__links__link">CONHEÇA</a>
                 <a href="#" className="footer__sobre__links__link">COMO COMPRAR</a>
