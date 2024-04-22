@@ -7,7 +7,7 @@ interface IProps {
 
 const ModularButton = ({type, btnText}: IProps) => {
   return (
-    <button className={type === 1 ? 'button-v1' : type === 2 ? 'button-v2' : type === 3 ? 'button-v3' : undefined}>{btnText}</button>
+    <button className={type === 1 ? 'button-v1' : type === 2 ? 'button-v2' : type === 3 ? 'button-v3' : type === 4 ? 'button-v4' : undefined}>{btnText}</button>
   )
 }
 

@@ -27,3 +27,9 @@
         size: $size;
     }
 }
+
+@mixin footer-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: colors.$bg;
+}
