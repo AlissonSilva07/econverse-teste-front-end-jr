@@ -1,0 +1,42 @@
+@use '../abstracts/colors';
+@use '../abstracts/mixins';
+
+.area-modal-produto {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: colors.$modal;
+    @include mixins.center-vertical;
+    justify-content: center;
+    z-index: 100;
+
+    .modal-produto {
+        position: relative;
+        width: 769px;
+        height: 300px;
+        background-color: colors.$bg;
+        padding: 32px;
+        @include mixins.center-horizontal;
+
+        .modal-produto__x {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            border: none;
+            background-color: transparent;
+        }
+
+        .modal-produto__picture {
+            flex: 1;
+        }
+
+        .modal-produto__info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+}
