@@ -23,9 +23,9 @@ const ModalProduto = ({close, product}: IProps) => {
             </div>
             <div className="modal-produto__info">
                 <p className="modal-produto__info__title">{product.productName}</p>
-                <p className="modal-produto__info__price">{product.price}</p>
+                <p className="modal-produto__info__price">R$ {product.price}</p>
                 <p className="modal-produto__info__sub">{product.descriptionShort}</p>
-                <a href="#" className="modal-produto__info__detail"></a>
+                <a href="#" className="modal-produto__info__detail">Veja mais detalhes do produto &gt;</a>
                 <div className="modal-produto__info__range-group">
                     <button className="modal-produto__info__range-group__minus">
                         <img src={Minus} alt="Minus" />

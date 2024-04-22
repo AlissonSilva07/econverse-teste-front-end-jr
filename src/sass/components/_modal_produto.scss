@@ -38,5 +38,23 @@
             flex-direction: column;
             gap: 16px;
         }
+
+        .modal-produto__info__title {
+            font-size: 20px;
+            font-weight: 500;
+            color: colors.$dark-blue;
+        }
+
+        .modal-produto__info__price {
+            font-size: 20px;
+            font-weight: bold;
+            color: colors.$dark-blue;
+        }
+
+        .modal-produto__info__sub {
+            font-size: 10px;
+            font-weight: 500;
+            color: colors.$gray-1000;
+        }
     }
 }
