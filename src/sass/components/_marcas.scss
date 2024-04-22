@@ -1,0 +1,21 @@
+@use '../abstracts/colors';
+@use '../abstracts/mixins';
+
+.marcas {
+    @include mixins.margin-2xl;
+    @include mixins.center-vertical;
+    justify-content: center;
+    gap: 64px;
+
+    .marcas__title {
+        font-size: 30px;
+        font-weight: bold;
+        color: colors.$primary;
+    }
+
+    .marcas__group {
+        width: 100%;
+        @include mixins.center-horizontal;
+        justify-content: space-between;
+    }
+}

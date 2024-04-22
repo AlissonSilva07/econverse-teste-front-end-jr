@@ -1,6 +1,7 @@
 import Categories from './components/Categories'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import Marcas from './components/Marcas'
 import Parceiros from './components/Parceiros'
 import Produtos from './components/Produtos'
 import Related from './components/Related'
@@ -18,6 +19,7 @@ function App() {
       <Parceiros />
       <SectionTitle title='Produtos Relacionados' sub='Ver Todos' />
       <Produtos />
+      <Marcas />
     </>
   )
 }

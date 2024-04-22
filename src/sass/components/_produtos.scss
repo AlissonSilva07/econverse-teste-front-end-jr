@@ -4,5 +4,5 @@
 .produtos {
     margin: 32px 120px;
     @include mixins.center-horizontal;
-    justify-content: space-around;
+    justify-content: space-between;
 }
