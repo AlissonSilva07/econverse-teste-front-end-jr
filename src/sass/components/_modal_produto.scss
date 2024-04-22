@@ -56,5 +56,12 @@
             font-weight: 500;
             color: colors.$gray-1000;
         }
+
+        .modal-produto__info__detail {
+            font-size: 12px;
+            font-weight: 500;
+            color: colors.$dark-blue;
+            text-decoration: underline;
+        }
     }
 }
