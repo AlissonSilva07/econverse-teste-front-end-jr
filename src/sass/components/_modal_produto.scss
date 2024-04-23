@@ -37,31 +37,62 @@
             display: flex;
             flex-direction: column;
             gap: 16px;
-        }
 
-        .modal-produto__info__title {
-            font-size: 20px;
-            font-weight: 500;
-            color: colors.$dark-blue;
-        }
+            .modal-produto__info__title {
+                font-size: 20px;
+                font-weight: 500;
+                color: colors.$dark-blue;
+            }
+    
+            .modal-produto__info__price {
+                font-size: 20px;
+                font-weight: bold;
+                color: colors.$dark-blue;
+            }
+    
+            .modal-produto__info__sub {
+                font-size: 10px;
+                font-weight: 500;
+                color: colors.$gray-1000;
+            }
+    
+            .modal-produto__info__detail {
+                font-size: 12px;
+                font-weight: 500;
+                color: colors.$dark-blue;
+                text-decoration: underline;
+            }
+    
+            .modal-produto__info__range-group {
+                width: 110px;
+                position: relative;
+                @include mixins.center-horizontal;
+                justify-content: center;
 
-        .modal-produto__info__price {
-            font-size: 20px;
-            font-weight: bold;
-            color: colors.$dark-blue;
-        }
+                .modal-produto__info__range-group__input {
+                    width: 100%;
+                    padding: .5rem;
+                    text-align: center;
+                    font-weight: 500;
+                    color: colors.$dark-blue;
+                    border: 1px solid colors.$dark-blue;
+                    border-radius: 4px;
+                }
 
-        .modal-produto__info__sub {
-            font-size: 10px;
-            font-weight: 500;
-            color: colors.$gray-1000;
-        }
+                .modal-produto__info__range-group__minus {
+                    position: absolute;
+                    left: 8px;
+                    background-color: transparent;
+                    border: none;
+                }
 
-        .modal-produto__info__detail {
-            font-size: 12px;
-            font-weight: 500;
-            color: colors.$dark-blue;
-            text-decoration: underline;
+                .modal-produto__info__range-group__plus {
+                    position: absolute;
+                    right: 8px;
+                    background-color: transparent;
+                    border: none;
+                }
+            }
         }
     }
 }

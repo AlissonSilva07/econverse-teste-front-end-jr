@@ -5,6 +5,7 @@ import Plus from '../assets/ModalProduto/plus.png'
 import X from '../assets/ModalProduto/x (1).png'
 import { Product } from '../types/Product'
 import ModularButton from './ModularButton'
+import { useState } from 'react'
 
 interface IProps {
     close: () => void
@@ -12,6 +13,20 @@ interface IProps {
 }
 
 const ModalProduto = ({close, product}: IProps) => {
+    const [ qtdProduto, setQtdProduto ] = useState<number>(1)
+
+    const handleQtdProduto = (command: string): void => {
+        switch (command) {
+            case '-':
+                setQtdProduto(qtdProduto === 1 ? 1 : (qtdProduto - 1))
+                break;
+            case '+':
+                setQtdProduto(qtdProduto + 1)
+                break;
+        }
+
+    }
+
   return (
     <div className='area-modal-produto'>
         <div className='modal-produto'>
@@ -27,11 +42,11 @@ const ModalProduto = ({close, product}: IProps) => {
                 <p className="modal-produto__info__sub">{product.descriptionShort}</p>
                 <a href="#" className="modal-produto__info__detail">Veja mais detalhes do produto &gt;</a>
                 <div className="modal-produto__info__range-group">
-                    <button className="modal-produto__info__range-group__minus">
+                    <button onClick={() => handleQtdProduto('-')} className="modal-produto__info__range-group__minus">
                         <img src={Minus} alt="Minus" />
                     </button>
-                    <input type="number" value={1} name="" id="" className="modal-produto__info__range-group__input" />
-                    <button className="modal-produto__info__range-group__plus">
+                    <span className="modal-produto__info__range-group__input">{qtdProduto}</span>
+                    <button onClick={() => handleQtdProduto('+')} className="modal-produto__info__range-group__plus">
                         <img src={Plus} alt="Plus" />
                     </button>
                 </div>
