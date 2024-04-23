@@ -12,7 +12,7 @@ const CardAd = ({ title, subtitle, btnText }: IProps) => {
     <div className='card-ad'>
         <p className="card-ad__title">{title}</p>
         <p className="card-ad__subtitle">{subtitle}</p>
-        <ModularButton type={3} btnText={btnText} />
+        <ModularButton type={3} btnText={btnText} action={() => {}} />
     </div>
   )
 }

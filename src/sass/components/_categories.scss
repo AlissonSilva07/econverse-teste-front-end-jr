@@ -1,8 +1,0 @@
-@use '../abstracts/colors';
-@use '../abstracts/mixins';
-
-.categories {    
-    padding: 32px 80px;
-    @include mixins.center-horizontal;
-    justify-content: space-between;
-}

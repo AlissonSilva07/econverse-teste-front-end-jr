@@ -1,0 +1,25 @@
+@use '../../abstracts/colors';
+@use '../../abstracts/mixins';
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+
+    .carousel-container__button-left {
+        position: absolute;
+        top: 25%;
+        left: -64px;
+        bottom: 25%;
+        background-color: transparent;
+        border: none;
+    }
+
+    .carousel-container__button-right {
+        position: absolute;
+        top: 25%;
+        right: -64px;
+        bottom: 25%;
+        background-color: transparent;
+        border: none;
+    }
+}

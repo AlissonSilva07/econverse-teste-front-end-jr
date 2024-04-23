@@ -1,0 +1,44 @@
+@use '../../abstracts/colors';
+@use '../../abstracts/mixins';
+
+.single-category {
+    height: 174px;
+    @include mixins.center-vertical;
+    gap: 22px;
+    border: none;
+    background-color: transparent;
+
+    .single-category__img-container {
+        width: 128px;
+        height: 128px;
+        @include mixins.center-vertical;
+        justify-content: center;
+        background-color: colors.$gray-125;
+        border: none;
+        border-radius: 10px;
+        @include mixins.shadow-xl;
+    }
+
+    .single-category__img-container__checked {
+        width: 128px;
+        height: 128px;
+        @include mixins.center-vertical;
+        justify-content: center;
+        background-color: colors.$bg;
+        border: none;
+        border-radius: 10px;
+        filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+    }
+
+    .single-category__text {
+        font-size: 16px;
+        font-weight: 500;
+        color: colors.$gray-800;
+    }
+
+    .single-category__text__checked {
+        font-size: 16px;
+        font-weight: 500;
+        color: colors.$primary;
+    }
+}

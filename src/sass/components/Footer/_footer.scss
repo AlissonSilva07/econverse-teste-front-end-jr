@@ -1,0 +1,141 @@
+@use '../../abstracts/colors';
+@use '../../abstracts/mixins';
+
+.footer {
+    width: 100%;
+    background-color: colors.$gray-950;
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    padding: 32px 80px;
+
+    .footer__sobre {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        .footer__sobre__title {
+            @include mixins.footer-title;
+        }
+    
+        .footer__sobre__links {
+            width: fit-content;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+    
+            .footer__sobre__links__link {
+                font-size: 12px;
+                font-weight: 300;
+                color: colors.$bg;
+            }
+        }
+
+        .footer__sobre__socials {
+            @include mixins.center-horizontal;
+            justify-content: space-between;
+    
+            .footer__sobre__socials__social-button {
+                background-color: transparent;
+                border: none;
+            }
+        }
+    }
+
+    .footer__info {
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        .footer__info__title {
+            @include mixins.footer-title;
+        }
+
+        .footer__info__group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .footer__info__group__link {
+            font-size: 12px;
+            font-weight: 300;
+            color: colors.$bg;
+        }
+    }
+
+    .footer__pagamento {
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        .footer__pagamento__title {
+            @include mixins.footer-title;
+        }
+
+        .footer__pagamento_group {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+    }
+
+    .footer__spacer {
+        flex: 1;
+    }
+
+    .footer__cadastro {
+        width: 380px;
+        height: 260px;
+        background-color: colors.$bg;
+        border: none;
+        border-radius: 10px;
+        padding: 32px;
+        @include mixins.center-vertical;
+        justify-content: space-between;
+
+        .footer__cadastro__title-weak {
+            font-size: 18px;
+            font-weight: 300;
+            color: colors.$gray-900;
+        }
+
+        .footer__cadastro__title-strong {
+            font-size: 21px;
+            font-weight: bold;
+            color: colors.$gray-900;
+        }
+
+        .footer__cadastro__subtitle {
+            font-size: 12px;
+            font-weight: 300;
+            color: colors.$gray-900;
+            text-align: center;
+        }
+
+        .footer__cadastro__input-area {
+            width: 100%;
+            @include mixins.center-horizontal;
+            gap: 6px;
+
+            .footer__cadastro__input-area__input {
+                width: 100%;
+                padding: 0.8rem;
+                border: 1px solid colors.$gray-950;
+                border-radius: 4px;
+                background-color: colors.$bg;
+                font-size: 12px;
+                font-weight: 300;
+                color: colors.$gray-25;
+            }
+        }
+
+    }
+
+}

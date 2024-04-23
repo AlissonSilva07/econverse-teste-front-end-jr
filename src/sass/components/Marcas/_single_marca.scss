@@ -1,0 +1,15 @@
+@use '../../abstracts/colors';
+@use '../../abstracts/mixins';
+
+.single-marca {
+    width: 211px;
+    height: 211px;
+    background-color: colors.$bg;
+
+    @include mixins.center-vertical;
+    justify-content: center;
+
+    border-radius: 100%;
+
+    @include mixins.shadow-xl;
+}

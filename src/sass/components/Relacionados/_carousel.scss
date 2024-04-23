@@ -1,0 +1,10 @@
+@use '../../abstracts/colors';
+@use '../../abstracts/mixins';
+
+.carousel {
+    padding: 16px;
+    @include mixins.center-horizontal;
+    gap: 64px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
