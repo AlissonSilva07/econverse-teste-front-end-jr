@@ -2,7 +2,7 @@
 @use '../abstracts/mixins';
 
 .marcas {
-    @include mixins.margin-2xl;
+    margin: 64px 80px;
     @include mixins.center-vertical;
     justify-content: center;
     gap: 64px;

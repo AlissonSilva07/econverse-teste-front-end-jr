@@ -2,7 +2,7 @@
 @use '../abstracts/mixins';
 
 .parceiros {
-    margin: 32px 120px;
+    margin: 32px 80px;
     @include mixins.center-horizontal;
     justify-content: space-between;
 }

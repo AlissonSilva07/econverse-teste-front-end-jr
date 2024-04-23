@@ -8,12 +8,12 @@ interface IProps {
 
 const SingleCategory = ({img, text, checked}: IProps) => {
   return (
-    <div className='single-category'>
+    <button className='single-category'>
         <div className={checked ? 'single-category__img-container__checked' : 'single-category__img-container'}>
             {img}
         </div>
         <p className={checked ? 'single-category__text__checked' : 'single-category__text'}>{text}</p>
-    </div>
+    </button>
   )
 }
 

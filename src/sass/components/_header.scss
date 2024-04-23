@@ -3,7 +3,7 @@
 
 header {
     @include mixins.center-vertical;
-    @include mixins.margin-2xl;
+    @include mixins.margin-xl;
 
     .header-top {
         @include mixins.center-horizontal;

@@ -28,7 +28,7 @@ const ModalProduto = ({close, product}: IProps) => {
     }
 
   return (
-    <div onClick={close} className='area-modal-produto'>
+    <div className='area-modal-produto'>
         <div className='modal-produto'>
             <button onClick={close} className="modal-produto__x">
                 <img src={X} alt="X" />

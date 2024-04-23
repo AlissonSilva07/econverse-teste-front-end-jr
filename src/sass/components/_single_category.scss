@@ -5,6 +5,8 @@
     height: 174px;
     @include mixins.center-vertical;
     gap: 22px;
+    border: none;
+    background-color: transparent;
 
     .single-category__img-container {
         width: 128px;
